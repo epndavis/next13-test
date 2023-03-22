@@ -2,6 +2,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from './page.module.css'
 
+const date = Date.now();
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -32,6 +34,10 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
+        <h1>
+          {date}
+        </h1>
+
         <Image
           className={styles.logo}
           src="/next.svg"
